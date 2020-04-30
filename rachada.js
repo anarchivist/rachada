@@ -33,7 +33,7 @@ __().square(3/7).gain(9/5).lowpass({id:"lp1",frequency:60,q:40}).dac();
 __().sine(7/14).gain(1/7).lowpass({id:"lp2",frequency:110,q:20}).dac();
 
 // parallel delay
-__("#lp1").delay({delay:0.03,feedback:.7}).connect("dac");
+__("#lp1").delay({delay:0.13,feedback:.7}).connect("dac");
 __("#lp2").delay({delay:0.60,feedback:0.3}).connect("dac");
 
 
